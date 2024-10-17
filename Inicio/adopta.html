@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-inicio/adopcion.css">
+    <link rel="icon" href="crs-favicon/Icono.png">
+    <title>Formulario de Adopción</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="inicio.html">
+                <img src="css-inicio/crs-inicio/Logo-Definitivo.png" alt="Descripción de la imagen" class="logo-image">
+            </a>
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="donacion.html" class="nav-link">Donación</a></li>
+                    <li class="nav-item">
+                        <a href="user.html" class="nav-link">
+                            <img src="css-inicio/crs-inicio/Icono-Iniciar.png" alt="Sesión" class="nav-icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div id="adoptForm" class="form-container box active">
+                <h2>Formulario de Adopción</h2>
+                <form id="adopcionForm">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" required>
+
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Dirección" required>
+
+                    <label for="tipoMascota">Tipo de mascota que desea adoptar:</label>
+                    <select id="tipoMascota" name="tipoMascota" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <button type="submit">Enviar solicitud</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-text">© 2024 Mi Sitio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('adopcionForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío automático del formulario
+        
+            // Verifica si el formulario es válido
+            if (this.checkValidity()) {
+                // Si es válido, redirige a mascotas.html
+                window.location.href = 'mascotas.html';
+            } else {
+                alert('Por favor, completa todos los campos requeridos antes de enviar.');
+            }
+        });
+        </script>
+</body>
+</html>

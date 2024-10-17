@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-inicio/inicio.css">
+    <link rel="icon" href="crs-favicon/Icono.png">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Pet Lovers</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="inicio.html">
+                <img src="css-inicio/crs-inicio/Logo-Definitivo.png" alt="Descripción de la imagen" class="logo-image">
+            </a>
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="adopta.html" class="nav-link">Adopta</a></li>
+                    <li class="nav-item">
+                        <a href="user.html" class="nav-link">
+                            <img src="css-inicio/crs-inicio/Icono-Iniciar.png" alt="Sesión" class="nav-icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form action="recibe.php" class="donacion"name="donacion" method="get">
+            <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre:" required>
+            <br>
+            <label for="sexo">Hombre: <input type="radio" name="sexo" id="hombre" value="Hombre" required></label>
+            <label for="sexo">Mujer: <input type="radio" name="sexo" id="mujer" value="Mujer" required></label>
+            <br>
+            <label for="terminos">Terminos y condiciones: <input type="checkbox" name="Terminos" id="Terminos" required></label>
+            <br>
+            <label for="btn"><input type="submit"  id="btn" name="btn" value="Enviar"></label>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="footer-text">© 2024 Pet Lovers. Todos los derechos reservados.</p>
+            <li class="nav-item"><a href="acercadnosotros.html" class="nav-link">Acerca de Nosotros</a></li>
+        </div>
+    </footer>
+</body>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-inicio/mascotita.css">
+    <link rel="icon" href="crs-favicon/Icono.png">
+    <title>Formulario de Adopción</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="inicio.html">
+                <img src="css-inicio/crs-inicio/Logo-Definitivo.png" alt="Descripción de la imagen" class="logo-image">
+            </a>
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="donacion.html" class="nav-link">Donación</a></li>
+                    <li class="nav-item">
+                        <a href="user.html" class="nav-link">
+                            <img src="css-inicio/crs-inicio/Icono-Iniciar.png" alt="Sesión" class="nav-icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mascota-container">
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/perro.jpg" alt="Foto de Max">
+            <h3>Max</h3>
+            <p>Max es un perro hermoso.</p>
+            <input type="radio" name="mascota" id="mascota1" value="Max" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/gato.jpg" alt="Foto de Luna">
+            <h3>Luna</h3>
+            <p>Luna es juguetona y cariñosa.</p>
+            <input type="radio" name="mascota" id="mascota2" value="Luna" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/gato2.jpg" alt="Foto de Panchito">
+            <h3>Panchito</h3>
+            <p>Panchito fue rescatado.</p>
+            <input type="radio" name="mascota" id="mascota3" value="Panchito" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/perro2.jpg" alt="Foto de Tobi">
+            <h3>Tobi</h3>
+            <p>Tobi es un perro muy juguetón.</p>
+            <input type="radio" name="mascota" id="mascota4" value="Tobi" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/perro2.webp" alt="Foto de Lolita">
+            <h3>Lolita</h3>
+            <p>Lolita es una perra muy hermosa.</p>
+            <input type="radio" name="mascota" id="mascota5" value="Lolita" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/gato3.jpg" alt="Foto de Marquitos">
+            <h3>Marquitos</h3>
+            <p>Marquitos es un gato muy amable.</p>
+            <input type="radio" name="mascota" id="mascota6" value="Marquitos" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+        <div class="mascota-card">
+          <img src="crs-inicioadopcion/perro.jpg" alt="Foto de Max">
+          <h3>Max</h3>
+          <p>Max es un perro hermoso.</p>
+          <input type="radio" name="mascota" id="mascota1" value="Max" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/gato.jpg" alt="Foto de Luna">
+          <h3>Luna</h3>
+          <p>Luna es juguetona y cariñosa.</p>
+          <input type="radio" name="mascota" id="mascota2" value="Luna" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/gato2.jpg" alt="Foto de Panchito">
+          <h3>Panchito</h3>
+          <p>Panchito fue rescatado.</p>
+          <input type="radio" name="mascota" id="mascota3" value="Panchito" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/perro2.jpg" alt="Foto de Tobi">
+          <h3>Tobi</h3>
+          <p>Tobi es un perro muy juguetón.</p>
+          <input type="radio" name="mascota" id="mascota4" value="Tobi" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/perro2.webp" alt="Foto de Lolita">
+          <h3>Lolita</h3>
+          <p>Lolita es una perra muy hermosa.</p>
+          <input type="radio" name="mascota" id="mascota5" value="Lolita" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/gato3.jpg" alt="Foto de Marquitos">
+          <h3>Marquitos</h3>
+          <p>Marquitos es un gato muy amable.</p>
+          <input type="radio" name="mascota" id="mascota6" value="Marquitos" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+      <div class="mascota-card">
+        <img src="crs-inicioadopcion/perro.jpg" alt="Foto de Max">
+        <h3>Max</h3>
+        <p>Max es un perro hermoso.</p>
+        <input type="radio" name="mascota" id="mascota1" value="Max" onclick="showAdoptButton(this)">
+        <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+    </div>
+
+    <div class="mascota-card">
+        <img src="crs-inicioadopcion/gato.jpg" alt="Foto de Luna">
+        <h3>Luna</h3>
+        <p>Luna es juguetona y cariñosa.</p>
+        <input type="radio" name="mascota" id="mascota2" value="Luna" onclick="showAdoptButton(this)">
+        <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+    </div>
+
+    <div class="mascota-card">
+        <img src="crs-inicioadopcion/gato2.jpg" alt="Foto de Panchito">
+        <h3>Panchito</h3>
+        <p>Panchito fue rescatado.</p>
+        <input type="radio" name="mascota" id="mascota3" value="Panchito" onclick="showAdoptButton(this)">
+        <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+    </div>
+
+    <div class="mascota-card">
+        <img src="crs-inicioadopcion/perro2.jpg" alt="Foto de Tobi">
+        <h3>Tobi</h3>
+        <p>Tobi es un perro muy juguetón.</p>
+        <input type="radio" name="mascota" id="mascota4" value="Tobi" onclick="showAdoptButton(this)">
+        <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+    </div>
+
+    <div class="mascota-card">
+        <img src="crs-inicioadopcion/perro2.webp" alt="Foto de Lolita">
+        <h3>Lolita</h3>
+        <p>Lolita es una perra muy hermosa.</p>
+        <input type="radio" name="mascota" id="mascota5" value="Lolita" onclick="showAdoptButton(this)">
+        <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+    </div>
+
+    <div class="mascota-card">
+        <img src="crs-inicioadopcion/gato3.jpg" alt="Foto de Marquitos">
+        <h3>Marquitos</h3>
+        <p>Marquitos es un gato muy amable.</p>
+        <input type="radio" name="mascota" id="mascota6" value="Marquitos" onclick="showAdoptButton(this)">
+        <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+    </div>
+    <div class="mascota-card">
+            <img src="crs-inicioadopcion/perro.jpg" alt="Foto de Max">
+            <h3>Max</h3>
+            <p>Max es un perro hermoso.</p>
+            <input type="radio" name="mascota" id="mascota1" value="Max" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/gato.jpg" alt="Foto de Luna">
+            <h3>Luna</h3>
+            <p>Luna es juguetona y cariñosa.</p>
+            <input type="radio" name="mascota" id="mascota2" value="Luna" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/gato2.jpg" alt="Foto de Panchito">
+            <h3>Panchito</h3>
+            <p>Panchito fue rescatado.</p>
+            <input type="radio" name="mascota" id="mascota3" value="Panchito" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/perro2.jpg" alt="Foto de Tobi">
+            <h3>Tobi</h3>
+            <p>Tobi es un perro muy juguetón.</p>
+            <input type="radio" name="mascota" id="mascota4" value="Tobi" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/perro2.webp" alt="Foto de Lolita">
+            <h3>Lolita</h3>
+            <p>Lolita es una perra muy hermosa.</p>
+            <input type="radio" name="mascota" id="mascota5" value="Lolita" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/gato3.jpg" alt="Foto de Marquitos">
+            <h3>Marquitos</h3>
+            <p>Marquitos es un gato muy amable.</p>
+            <input type="radio" name="mascota" id="mascota6" value="Marquitos" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+        <div class="mascota-card">
+          <img src="crs-inicioadopcion/perro.jpg" alt="Foto de Max">
+          <h3>Max</h3>
+          <p>Max es un perro hermoso.</p>
+          <input type="radio" name="mascota" id="mascota1" value="Max" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/gato.jpg" alt="Foto de Luna">
+          <h3>Luna</h3>
+          <p>Luna es juguetona y cariñosa.</p>
+          <input type="radio" name="mascota" id="mascota2" value="Luna" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/gato2.jpg" alt="Foto de Panchito">
+          <h3>Panchito</h3>
+          <p>Panchito fue rescatado.</p>
+          <input type="radio" name="mascota" id="mascota3" value="Panchito" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/perro2.jpg" alt="Foto de Tobi">
+          <h3>Tobi</h3>
+          <p>Tobi es un perro muy juguetón.</p>
+          <input type="radio" name="mascota" id="mascota4" value="Tobi" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/perro2.webp" alt="Foto de Lolita">
+          <h3>Lolita</h3>
+          <p>Lolita es una perra muy hermosa.</p>
+          <input type="radio" name="mascota" id="mascota5" value="Lolita" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/gato3.jpg" alt="Foto de Marquitos">
+          <h3>Marquitos</h3>
+          <p>Marquitos es un gato muy amable.</p>
+          <input type="radio" name="mascota" id="mascota6" value="Marquitos" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+      <div class="mascota-card">
+            <img src="crs-inicioadopcion/perro.jpg" alt="Foto de Max">
+            <h3>Max</h3>
+            <p>Max es un perro hermoso.</p>
+            <input type="radio" name="mascota" id="mascota1" value="Max" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/gato.jpg" alt="Foto de Luna">
+            <h3>Luna</h3>
+            <p>Luna es juguetona y cariñosa.</p>
+            <input type="radio" name="mascota" id="mascota2" value="Luna" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/gato2.jpg" alt="Foto de Panchito">
+            <h3>Panchito</h3>
+            <p>Panchito fue rescatado.</p>
+            <input type="radio" name="mascota" id="mascota3" value="Panchito" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/perro2.jpg" alt="Foto de Tobi">
+            <h3>Tobi</h3>
+            <p>Tobi es un perro muy juguetón.</p>
+            <input type="radio" name="mascota" id="mascota4" value="Tobi" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/perro2.webp" alt="Foto de Lolita">
+            <h3>Lolita</h3>
+            <p>Lolita es una perra muy hermosa.</p>
+            <input type="radio" name="mascota" id="mascota5" value="Lolita" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/gato3.jpg" alt="Foto de Marquitos">
+            <h3>Marquitos</h3>
+            <p>Marquitos es un gato muy amable.</p>
+            <input type="radio" name="mascota" id="mascota6" value="Marquitos" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+        <div class="mascota-card">
+          <img src="crs-inicioadopcion/perro.jpg" alt="Foto de Max">
+          <h3>Max</h3>
+          <p>Max es un perro hermoso.</p>
+          <input type="radio" name="mascota" id="mascota1" value="Max" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/gato.jpg" alt="Foto de Luna">
+          <h3>Luna</h3>
+          <p>Luna es juguetona y cariñosa.</p>
+          <input type="radio" name="mascota" id="mascota2" value="Luna" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/gato2.jpg" alt="Foto de Panchito">
+          <h3>Panchito</h3>
+          <p>Panchito fue rescatado.</p>
+          <input type="radio" name="mascota" id="mascota3" value="Panchito" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/perro2.jpg" alt="Foto de Tobi">
+          <h3>Tobi</h3>
+          <p>Tobi es un perro muy juguetón.</p>
+          <input type="radio" name="mascota" id="mascota4" value="Tobi" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/perro2.webp" alt="Foto de Lolita">
+          <h3>Lolita</h3>
+          <p>Lolita es una perra muy hermosa.</p>
+          <input type="radio" name="mascota" id="mascota5" value="Lolita" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+
+      <div class="mascota-card">
+          <img src="crs-inicioadopcion/gato3.jpg" alt="Foto de Marquitos">
+          <h3>Marquitos</h3>
+          <p>Marquitos es un gato muy amable.</p>
+          <input type="radio" name="mascota" id="mascota6" value="Marquitos" onclick="showAdoptButton(this)">
+          <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+      </div>
+      <div class="mascota-card">
+        <img src="crs-inicioadopcion/perro.jpg" alt="Foto de Max">
+        <h3>Max</h3>
+        <p>Max es un perro hermoso.</p>
+        <input type="radio" name="mascota" id="mascota1" value="Max" onclick="showAdoptButton(this)">
+        <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+    </div>
+
+    <div class="mascota-card">
+        <img src="crs-inicioadopcion/gato.jpg" alt="Foto de Luna">
+        <h3>Luna</h3>
+        <p>Luna es juguetona y cariñosa.</p>
+        <input type="radio" name="mascota" id="mascota2" value="Luna" onclick="showAdoptButton(this)">
+        <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+    </div>
+
+    <div class="mascota-card">
+        <img src="crs-inicioadopcion/gato2.jpg" alt="Foto de Panchito">
+        <h3>Panchito</h3>
+        <p>Panchito fue rescatado.</p>
+        <input type="radio" name="mascota" id="mascota3" value="Panchito" onclick="showAdoptButton(this)">
+        <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+    </div>
+
+    <div class="mascota-card">
+        <img src="crs-inicioadopcion/perro2.jpg" alt="Foto de Tobi">
+        <h3>Tobi</h3>
+        <p>Tobi es un perro muy juguetón.</p>
+        <input type="radio" name="mascota" id="mascota4" value="Tobi" onclick="showAdoptButton(this)">
+        <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+    </div>
+
+    <div class="mascota-card">
+        <img src="crs-inicioadopcion/perro2.webp" alt="Foto de Lolita">
+        <h3>Lolita</h3>
+        <p>Lolita es una perra muy hermosa.</p>
+        <input type="radio" name="mascota" id="mascota5" value="Lolita" onclick="showAdoptButton(this)">
+        <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+    </div>
+
+    <div class="mascota-card">
+        <img src="crs-inicioadopcion/gato3.jpg" alt="Foto de Marquitos">
+        <h3>Marquitos</h3>
+        <p>Marquitos es un gato muy amable.</p>
+        <input type="radio" name="mascota" id="mascota6" value="Marquitos" onclick="showAdoptButton(this)">
+        <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+    </div>
+    <div class="mascota-card">
+            <img src="crs-inicioadopcion/perro.jpg" alt="Foto de Max">
+            <h3>Max</h3>
+            <p>Max es un perro hermoso.</p>
+            <input type="radio" name="mascota" id="mascota1" value="Max" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/gato.jpg" alt="Foto de Luna">
+            <h3>Luna</h3>
+            <p>Luna es juguetona y cariñosa.</p>
+            <input type="radio" name="mascota" id="mascota2" value="Luna" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/gato2.jpg" alt="Foto de Panchito">
+            <h3>Panchito</h3>
+            <p>Panchito fue rescatado.</p>
+            <input type="radio" name="mascota" id="mascota3" value="Panchito" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/perro2.jpg" alt="Foto de Tobi">
+            <h3>Tobi</h3>
+            <p>Tobi es un perro muy juguetón.</p>
+            <input type="radio" name="mascota" id="mascota4" value="Tobi" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/perro2.webp" alt="Foto de Lolita">
+            <h3>Lolita</h3>
+            <p>Lolita es una perra muy hermosa.</p>
+            <input type="radio" name="mascota" id="mascota5" value="Lolita" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+
+        <div class="mascota-card">
+            <img src="crs-inicioadopcion/gato3.jpg" alt="Foto de Marquitos">
+            <h3>Marquitos</h3>
+            <p>Marquitos es un gato muy amable.</p>
+            <input type="radio" name="mascota" id="mascota6" value="Marquitos" onclick="showAdoptButton(this)">
+            <button class="adopt-button" onclick="redirectToUser()" style="display: none;">Adoptar</button>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p class="footer-text">© 2024 Mi Sitio. Todos los derechos reservados.</p>
+    </footer>
+  
+    <script>
+      function showAdoptButton(radio) {
+    // Oculta todos los botones de adopción
+    const buttons = document.querySelectorAll('.adopt-button');
+    buttons.forEach(button => {
+        button.style.display = 'none';
+    });
+
+    // Muestra el botón de adopción solo para el que fue clickeado
+    const button = radio.parentElement.querySelector('.adopt-button');
+    button.style.display = 'inline-block';
+}
+
+function redirectToUser() {
+    window.location.href = "user.html";
+}
+
+    </script>
+    <script src="js/mascotitas.js"></script>
+</body>
+</html>

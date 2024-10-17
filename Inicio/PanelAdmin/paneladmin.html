@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paneladmin.css">
+    <link rel="icon" href="crs-favicon/Icono.png">
+    <title>Panel de Subida de Animales</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Subir Animal</h1>
+        <form id="animalForm" enctype="multipart/form-data" action="subir_animal.php" method="POST">
+            <label for="animalType">Tipo de Animal:</label>
+            <select id="animalType" name="animalType" required>
+                <option value="" disabled selected>Selecciona un tipo</option>
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+            </select>
+
+            <label for="age">Edad (en años):</label>
+            <input type="number" id="age" name="age" required min="0">
+
+            <label for="description">Descripción:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="image">Imagen:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit">Subir Animal</button>
+        </form>
+    </div>
+
+    <script src="paneladmin.js"></script>
+</body>
+</html>

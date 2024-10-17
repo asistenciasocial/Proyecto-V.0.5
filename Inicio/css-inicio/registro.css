@@ -1,0 +1,150 @@
+/* Estilo para el encabezado */
+
+
+.site-header {
+    background-color: #a08669;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Estilo para el contenido principal */
+.main-content {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    min-height: 80vh; /* Asegura que el contenido principal tenga suficiente altura */
+}
+
+/* Estilo para las pestañas */
+.tabs {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.tabs div {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 5px;
+    transition: background 0.6s, color 0.6s, transform 0.3s;
+}
+
+.tabs div.active {
+    background: #a08669;
+    color: white;
+    font-weight: bold;
+}
+
+.tabs div:hover {
+    background: #e5e5e5;
+    transform: scale(1.05);
+}
+
+/* Estilo para los formularios */
+.form-container {
+    display: none;
+    padding: 2rem; /* Aumenta el padding para hacer la caja más grande */
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    color: #333;
+    max-width: 80%; /* Aumenta el ancho máximo */
+    transition: transform 0.6s, box-shadow 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+}
+
+
+.form-container:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #a08669;
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: #a08669;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #8e6d59;
+}
+
+/* Estilo para el pie de página */
+.site-footer {
+    background-color: #a08669;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 0.875rem;
+}

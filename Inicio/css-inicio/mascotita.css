@@ -1,0 +1,233 @@
+/* Estilo para el encabezado */
+
+
+.site-header {
+    background-color: #a08669;
+    color: #fff;
+    padding: 1rem 2rem; /* Añadí padding horizontal para separar los elementos del borde */
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos al principio y al final */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.logo-image {
+    max-height: 50px; /* Ajusta el tamaño del logo si es necesario */
+}
+
+.site-nav {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos de navegación */
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 1rem;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-icon {
+    height: 24px; /* Ajusta el tamaño del icono si es necesario */
+    vertical-align: middle; /* Alinea el icono verticalmente */
+}
+
+/* Estilo para el contenido principal */
+.main-content {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    min-height: 80vh; /* Asegura que el contenido principal tenga suficiente altura */
+}
+
+/* Estilo para las pestañas */
+.tabs {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+#adopnashe {
+    background-color: #a08669;
+    color: rgb(255, 255, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tabs div {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+/* Estilo para los formularios */
+.form-container {
+    display: none;
+    padding: 2rem; /* Aumenta el padding para hacer la caja más grande */
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    color: #333;
+    max-width: 80%; /* Aumenta el ancho máximo */
+    transition: transform 0.6s, box-shadow 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+}
+
+.form-container:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: #a08669;
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: #a08669;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #8e6d59;
+}
+
+/* Estilo para el pie de página */
+.site-footer {
+    background-color: #a08669;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed; /* Cambia a fixed para que el pie de página esté siempre en la parte inferior */
+    bottom: 0;
+    left: 0;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.hero-button-container {
+    display: flex; /* Usar flexbox */
+    justify-content: flex-end; /* Alinear a la derecha */
+    margin-top: 20px; /* Espaciado superior opcional */
+}
+
+
+
+.mascota-container {
+    display: flex;
+    flex-wrap: wrap; /* Para que las tarjetas se ajusten en varias filas si es necesario */
+    justify-content: space-around; /* Espacio entre las tarjetas */
+    gap: 20px; /* Espacio entre cada tarjeta */
+    padding: 20px;
+}
+
+.mascota-card {
+    width: 200px; /* Ajusta el ancho de la tarjeta */
+    height: 300px; /* Ajusta la altura de la tarjeta */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra para dar efecto de profundidad */
+}
+
+.mascota-card img {
+    max-width: 100%;
+    height: 150px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Para que las imágenes mantengan su proporción sin deformarse */
+}
+
+.mascota-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.mascota-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.mascota-card input {
+    margin-top: 10px;
+}
+
+.boton-adoptar {
+    background-color: #a08669;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-adoptar:hover {
+    background-color: #8e6d59;
+}

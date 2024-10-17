@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-inicio/registro.css">
+    <link rel="icon" href="crs-favicon/Icono.png">
+    <title>Login y Registro</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="inicio.html" class="nav-link">Inicio</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="tabs">
+                <div id="loginTab" class="active">Login</div>
+                <div id="registerTab">Registro</div>
+            </div>
+            <div id="loginForm" class="form-container box active">
+                <h2>Login</h2>
+                <form action="../Base/Servidor/login.php" method="POST">
+                    <input type="text" name="username" placeholder="Nombre de usuario" required>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                    <button type="submit">Iniciar sesión</button>
+                </form>
+            </div>
+            <div id="registerForm" class="form-container box">
+                <h2>Registro</h2>
+                <form action="../Base/Servidor/register.php" method="POST">
+                    <input type="text" name="username" placeholder="Nombre de usuario" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-text">© 2024 Mi Sitio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/user.js"></script>
+</body>
+</html>
